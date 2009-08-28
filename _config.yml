@@ -1,0 +1,4 @@
+destination: ./_site
+auto: true
+lsi: true
+permalink: /:categories/:title

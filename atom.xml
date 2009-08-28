@@ -1,0 +1,32 @@
+---
+layout: nil
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+ <title>Dmitry Belitsky Blog</title>
+ <link href="http://litanyagainstfear.com/atom.xml" rel="self"/>
+ <link href="http://litanyagainstfear.com/"/>
+ <updated>{{ site.time | date_to_xmlschema }}</updated>
+ <id>http://belitsky.info/</id>
+ <author>
+   <name>Dmitry Belitsky</name>
+   <email>dmitry.belitsky@gmail.com</email>
+ </author>
+ 
+ {% for post in site.posts %}
+ <entry>
+   <title>{{ post.title | xml_escape }}</title>
+   <link href="http://belitsky.info{{ post.url }}"/>
+   <updated>{{ post.date | date_to_xmlschema }}</updated>
+   <id>http://belitsky.info{{ post.id }}</id>
+   <content type="html">
+		{% if post.teaser %}
+ 			<p>{{ post.teaser  }}</p>
+		{% else %}
+			{{ post.content  }}
+		{% endif %}</content>
+ </entry>
+ {% endfor %}
+ 
+</feed>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link type="text/css" href="/layout.css" rel="stylesheet">
+  <link href="http://feeds.feedburner.com/belitskyinfo" rel="alternate" title="RSS" type="application/rss+xml" />  
+	<title>{{ page.title }} &mdash; Dmitry Belitsky blog. Web development, freelance, happy life.</title>
+</head>
+<body>
+
+  <div class="header">
+    <p class="info">Hello, my name is</p>
+    <h1 class="logo"><a href="/">Dmitry Belitsky</a></h1>
+    <p class="info">I do web development and live happy life with my family.</p> 
+  </div>
+  
+  <div class="contacts">
+    <p>Feel free to <a href="mailto:dmitry.belitsky@gmail.com">contact me</a> and hire me for your next project.</p>
+    <h3>Social activity</h3> 
+    <ul class="sidebar">
+      <li><a class="github" href="http://github.com/dab">Github</a></li>
+      <li><a href="http://twitter.com/ragadab" class="twitter">Twitter</a></li>
+      <li><a href="http://flickr.com/photos/daim" class="flickr">Flickr</a></li>
+      <li><a class="gmail" href="mailto:dmitry.belitsky@gmail.com">Gmail</a></li>
+    </ul>
+  </div>
+
+	{{ content }}
+  
+  <div class="content-item footer">
+  <p>This site made with <a href="http://github.com/mojombo/jekyll">jekyll</a>.</p>
+  <p>Spread the peace and be happy.</p>
+  <p>All content may be used with links to this site.</p>  
+  </div>
+
+	<div class="top-grad"></div>
+	<script type="text/javascript">
+	//<![CDATA[
+	(function() {
+		var links = document.getElementsByTagName('a');
+		var query = '?';
+		for(var i = 0; i < links.length; i++) {
+		if(links[i].href.indexOf('#disqus_thread') >= 0) {
+			query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+		}
+		}
+		document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/belitsky/get_num_replies.js' + query + '"></' + 'script>');
+	})();
+	//]]>
+	</script>
+	<script type="text/javascript">
+	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+	<script type="text/javascript">
+	try {
+	var pageTracker = _gat._getTracker("UA-10401500-1");
+	pageTracker._trackPageview();
+	} catch(err) {}</script>
+</body>
+</html>
