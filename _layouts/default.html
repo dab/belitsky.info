@@ -1,36 +1,48 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link type="text/css" href="/layout.css" rel="stylesheet">
+  <link href="/css/layout.css" media="screen, projection" rel="stylesheet" type="text/css" />
+  <link href="/css/print.css" media="print" rel="stylesheet" type="text/css" />
+  <!--[if lt IE 8]>
+      <link href="/css/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+  <![endif]-->
+
   <link href="http://feeds.feedburner.com/belitskyinfo" rel="alternate" title="RSS" type="application/rss+xml" />  
+
 	<title>{{ page.title }} &mdash; Dmitry Belitsky blog. Web development, freelance, happy life.</title>
 </head>
 <body>
-
+<div class="page">
+	
   <div class="header">
     <p class="info">Hello, my name is</p>
     <h1 class="logo"><a href="/">Dmitry Belitsky</a></h1>
-    <p class="info">I do web development and live happy life with my family.</p> 
-  </div>
-  
-  <div class="contacts">
-    <p>Feel free to <a href="mailto:dmitry.belitsky@gmail.com">contact me</a> and hire me for your next project.</p>
-    <h3>Social activity</h3> 
-    <ul class="sidebar">
-      <li><a class="github" href="http://github.com/dab">Github</a></li>
-      <li><a href="http://twitter.com/ragadab" class="twitter">Twitter</a></li>
-      <li><a href="http://flickr.com/photos/daim" class="flickr">Flickr</a></li>
-      <li><a class="gmail" href="mailto:dmitry.belitsky@gmail.com">Gmail</a></li>
-    </ul>
+    <p class="info">I do web development and live happy life with my family.</p>
   </div>
 
-	{{ content }}
+	<div class="content-area">
+		{{ content }}
+	</div>
   
+	<div class="sidebar">
+		<div class="contacts">
+	    <p>Feel free to <a href="mailto:dmitry.belitsky@gmail.com">contact me</a> and hire me for your next project.</p>
+	  </div>
+		<h3>Social activity</h3> 
+	  <ul class="sidebar">
+	    <li><a class="github" href="http://github.com/dab">Github</a></li>
+	    <li><a href="http://twitter.com/ragadab" class="twitter">Twitter</a></li>
+	    <li><a href="http://flickr.com/photos/daim" class="flickr">Flickr</a></li>
+	    <li><a class="gmail" href="mailto:dmitry.belitsky@gmail.com">Gmail</a></li>
+	  </ul>
+	</div>
+
   <div class="content-item footer">
-  <p>This site made with <a href="http://github.com/mojombo/jekyll">jekyll</a>. <a href="http://github.com/dab/belitsky.info/tree/master">Site source on github</a>.</p>
-  <p>Spread the peace and be happy.</p>
+  	<p>This site made with <a href="http://github.com/mojombo/jekyll">jekyll</a>. <a href="http://github.com/dab/belitsky.info/tree/master">Site source on github</a>.</p>
+  	<p>Spread the peace and be happy.</p>
   </div>
 
+</div>
 	<div class="top-grad"></div>
 	<script type="text/javascript">
 	//<![CDATA[

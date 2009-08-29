@@ -1,4 +1,5 @@
 destination: ./_site
 auto: true
-lsi: true
+lsi: false
 permalink: /:categories/:title
+exclude: - config.rb
