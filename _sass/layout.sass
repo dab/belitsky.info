@@ -27,12 +27,12 @@ body
     +column(!blueprint_grid_columns)
   div.sidebar
     // One third of the grid columns, rounding down. With 24 cols, this is 8.
-    !sidebar_columns = floor(!blueprint_grid_columns / 3)
+    !sidebar_columns = floor(!blueprint_grid_columns / 4)
     +column(!sidebar_columns)
   .content-area, .header
     // Two thirds of the grid columns, rounding up.
     // With 24 cols, this is 16.
-    !content_columns = ceil(2 * !blueprint_grid_columns / 3)
+    !content_columns = ceil(3 * !blueprint_grid_columns / 4)
     // true means it's the last column in the row
     +column(!content_columns, true)
 

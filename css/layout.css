@@ -97,7 +97,7 @@ body .first { margin-left: 0; padding-left: 0; }
 body .last { margin-right: 0; padding-right: 0; }
 body .top { margin-top: 0; padding-top: 0; }
 body .bottom { margin-bottom: 0; padding-bottom: 0; }
-body .showgrid { background: url('/images/grid.png?1251577966'); }
+body .showgrid { background: url('/images/grid.png?1251589379'); }
 body .error { padding: .8em; margin-bottom: 1em; border: 2px solid #dddddd; background: #fbe3e4; color: #8a1f11; border-color: #fbc2c4; }
 body .error a { color: #8a1f11; }
 body .notice { padding: .8em; margin-bottom: 1em; border: 2px solid #dddddd; background: #fff6bf; color: #514721; border-color: #ffd324; }
@@ -126,9 +126,9 @@ body .page { width: 950px; margin: 0 auto; overflow: hidden; display: inline-blo
 body .page { display: block; }
 body .footer { display: inline; float: left; margin-right: 10px; width: 950px; }
 * html body .footer { overflow-x: hidden; }
-body div.sidebar { display: inline; float: left; margin-right: 10px; width: 310px; }
+body div.sidebar { display: inline; float: left; margin-right: 10px; width: 230px; }
 * html body div.sidebar { overflow-x: hidden; }
-body .content-area, body .header { display: inline; float: left; margin-right: 0; width: 630px; }
+body .content-area, body .header { display: inline; float: left; margin-right: 0; width: 710px; }
 * html body .content-area, * html body .header { overflow-x: hidden; }
 
 body { background: #373737 url(/images/bg.png) repeat left top; color: #858585; font-size: 16px; line-height: 26px; }
