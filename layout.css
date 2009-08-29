@@ -201,7 +201,7 @@ ul.sidebar {
   background: #4c4c4c url(images/upic-aimonetti.jpg) no-repeat left top;
 }
 .chat.pabcas .left {
-  background: #4c4c4c url(images/upic-aimonetti.jpg) no-repeat left top;
+  background: #4c4c4c url(images/upic-pabcas.jpg) no-repeat left top;
 }
 .chat.peterc .left {
   background: #4c4c4c url(images/upic-peterc.jpg) no-repeat left top;
@@ -209,7 +209,9 @@ ul.sidebar {
 .chat.pat .left {
   background: #4c4c4c url(images/upic-pat.jpg) no-repeat left top;
 }
-
+.chat.akita .left {
+  background: #4c4c4c url(images/upic-akita.jpg) no-repeat left top;
+}
 .content-item ul, .content-item ol {
   margin: 0 0 20px 10px;
   list-style-position: inside;
