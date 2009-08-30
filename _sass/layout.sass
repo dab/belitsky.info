@@ -48,7 +48,7 @@ body
   line-height= round(!font_size * 1.6)
   .header
     padding-bottom= !blueprint_grid_margin * 5
-    padding-top= !blueprint_grid_margin * 2
+    padding-top= !blueprint_grid_margin * 3
     p, h1 
       padding: 0
       margin: 0
@@ -60,6 +60,7 @@ body
     a.link.home
       color= !bg_color + #222
       border-color= !bg_color + #222
+      font-size: 0.6em
   a, a:visited
     color= !links_color
     text-decoration: none
@@ -223,3 +224,12 @@ body > .top-grad
   height: 100px
   width: 100%
   background: url(/images/top-grad.png) repeat-x top
+
+body > .site-menu
+  position: fixed
+  top: 0 
+  right: 0
+  font-size: 10px
+  list-style: none
+  li
+    float: left
