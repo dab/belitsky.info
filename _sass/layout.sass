@@ -79,8 +79,26 @@ body
     color= !links_color
   .sidebar .contacts, .sidebar ul.sidebar, div.sidebar h2, div.sidebar h3
     padding= 0 !blueprint_grid_margin
+
 .page
   background: url(/images/bg-header.png) repeat-x left top 
+
+body > .top-grad
+  position: fixed
+  top: 0
+  height: 50px
+  width: 100%
+  background: url(/images/top-grad.png) repeat-x top
+
+body > .site-menu
+  position: fixed
+  top: 0 
+  right: 0
+  font-size: 10px
+  list-style: none
+  li
+    float: left
+
 
 .content-item.blog
   padding-bottom= !blueprint_grid_margin * 2
@@ -116,6 +134,22 @@ ul.sidebar
     width: 128px
     height: 57px
 
+div.sidebar
+  #flickr_badge_uber_wrapper
+    padding: 10px
+    a
+      margin: 0 10px 10px 0
+      display: block
+      border: 0px
+    a:hover
+      background: transparent
+  .flickr_badge_image 
+    float: left
+  .flickr_badge_image img 
+    padding: 10px
+    margin: 0
+    background: url(/images/thumb.gif) no-repeat center center
+
 .chat 
   margin-left: 10px
   color: #cacaca
@@ -123,47 +157,60 @@ ul.sidebar
   background: #3b3b3b
   position: relative
   margin-bottom: 30px
+  .right 
+    min-height: 73px
+    background: #3b3b3b url(/images/upic-me.jpg) no-repeat right top
+    padding: 0px 83px 0px 10px
+    border: 10px solid #3b3b3b
+  .left
+    min-height: 73px
+    background-color: #4c4c4c
+    padding: 0px 10px 0px 83px
+    border: 10px solid #4c4c4c
 
-
-.chat .right 
-  min-height: 73px
-  background: #3b3b3b url(/images/upic-me.jpg) no-repeat right top
-  padding: 0px 83px 0px 10px
-  border: 10px solid #3b3b3b
-
-.chat .left  
-  min-height: 73px
-  background-color: #4c4c4c
-  padding: 0px 10px 0px 83px
-  border: 10px solid #4c4c4c
+  ul, ol 
+    margin-bottom: 0
+  p 
+    padding: 0
+  .rounded 
+    width: 9px
+    height: 9px
+    position: absolute
+    background-image: url(/images/corners-dark.png)
+  .rounded.lt 
+    top: 0
+    left: 0
+  .rounded.rt 
+    top: 0
+    right: 0
+    background-position: 9px 0
+  .rounded.lb 
+    bottom: 0
+    left: 0
+    background-position: 0 -9px
+  .rounded.rb 
+    bottom: 0
+    right: 0
+    background-position: 9px 9px
 
 .chat.oleganza .left 
   background: #4c4c4c url(/images/upic-oleganza.jpg) no-repeat left top
-
 .chat.elise .left 
   background: #4c4c4c url(/images/upic-elise.jpg) no-repeat left top
-
 .chat.talbott .left 
   background: #4c4c4c url(/images/upic-talbott.jpg) no-repeat left top
-
 .chat.defunkt .left 
   background: #4c4c4c url(/images/upic-defunkt.jpg) no-repeat left top
-
 .chat.bates .left 
   background: #4c4c4c url(/images/upic-bates.jpg) no-repeat left top
-
 .chat.aimonetti .left 
   background: #4c4c4c url(/images/upic-aimonetti.jpg) no-repeat left top
-
 .chat.pabcas .left 
   background: #4c4c4c url(/images/upic-pabcas.jpg) no-repeat left top
-
 .chat.peterc .left 
   background: #4c4c4c url(/images/upic-peterc.jpg) no-repeat left top
-
 .chat.pat .left 
   background: #4c4c4c url(/images/upic-pat.jpg) no-repeat left top
-
 .chat.akita .left 
   background: #4c4c4c url(/images/upic-akita.jpg) no-repeat left top
 
@@ -185,54 +232,9 @@ ul.sidebar
   padding: 20px 0 10px 0
   background: url(/images/hr-sidebar.gif) no-repeat bottom center 
   font-size: 12px
-.chat ul, .chat ol 
-  margin-bottom: 0
 
-.chat p 
-  padding: 0
-
-.chat .rounded 
-  width: 9px
-  height: 9px
-  position: absolute
-  background-image: url(/images/corners-dark.png)
-
-.chat .rounded.lt 
-  top: 0
-  left: 0
-
-.chat .rounded.rt 
-  top: 0
-  right: 0
-  background-position: 9px 0
-
-.chat .rounded.lb 
-  bottom: 0
-  left: 0
-  background-position: 0 -9px
-
-.chat .rounded.rb 
-  bottom: 0
-  right: 0
-  background-position: 9px 9px
 
 .thumb 
   float: left
   background: url(/images/thumb.gif) no-repeat center center
   padding: 10px
-
-body > .top-grad
-  position: fixed
-  top: 0
-  height: 50px
-  width: 100%
-  background: url(/images/top-grad.png) repeat-x top
-
-body > .site-menu
-  position: fixed
-  top: 0 
-  right: 0
-  font-size: 10px
-  list-style: none
-  li
-    float: left
