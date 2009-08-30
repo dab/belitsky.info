@@ -45,7 +45,8 @@ body
   .header
     padding-bottom= !blueprint_grid_margin * 5
     padding-top= !blueprint_grid_margin * 2
-
+  h2
+    padding= !blueprint_grid_margin 0
   a, a:visited
     color= !links_color
     text-decoration: none
@@ -117,7 +118,6 @@ ul.sidebar
   padding: 10px 83px 10px 10px
   border: 10px solid #3b3b3b
 
-
 .chat .left  
   background-color: #4c4c4c
   padding: 10px 10px 10px 83px
@@ -128,7 +128,6 @@ ul.sidebar
 
 .chat.elise .left 
   background: #4c4c4c url(/images/upic-elise.jpg) no-repeat left top
-
 
 .chat.talbott .left 
   background: #4c4c4c url(/images/upic-talbott.jpg) no-repeat left top
@@ -159,28 +158,24 @@ ul.sidebar
   list-style-position: inside
   padding: 0
 
-
-.content-item ul 
+.content-item ul, #twitter_update_list 
   list-style: none
-
-
 
 .content-item ul li, .content-item ol li 
   margin-bottom: 10px
 
-
-.content-item ul li 
+.content-item ul li
   padding-left: 25px
   background: url(/images/bullet-arrow.png) no-repeat left 50%
-
-
+#twitter_update_list li
+  padding: 0 0 10px 20px
+  background: url(/images/bullet-arrow.png) no-repeat 0.4em left 
+  font-size: 12px
 .chat ul, .chat ol 
   margin-bottom: 0
 
-
 .chat p 
   padding: 0
-
 
 .chat .rounded 
   width: 9px
@@ -188,29 +183,24 @@ ul.sidebar
   position: absolute
   background-image: url(/images/corners-dark.png)
 
-
 .chat .rounded.lt 
   top: 0
   left: 0
-
 
 .chat .rounded.rt 
   top: 0
   right: 0
   background-position: 9px 0
 
-
 .chat .rounded.lb 
   bottom: 0
   left: 0
   background-position: 0 -9px
 
-
 .chat .rounded.rb 
   bottom: 0
   right: 0
   background-position: 9px 9px
-
 
 .thumb 
   float: left

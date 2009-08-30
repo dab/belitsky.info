@@ -28,13 +28,14 @@
 		<div class="contacts">
 	    <p>Feel free to <a href="mailto:dmitry.belitsky@gmail.com">contact me</a> and hire me for your next project.</p>
 	  </div>
-		<h3>Social activity</h3> 
+		<h3>Social activity</h3>
 	  <ul class="sidebar">
 	    <li><a class="github" href="http://github.com/dab">Github</a></li>
-	    <li><a href="http://twitter.com/ragadab" class="twitter">Twitter</a></li>
 	    <li><a href="http://flickr.com/photos/daim" class="flickr">Flickr</a></li>
 	    <li><a class="gmail" href="mailto:dmitry.belitsky@gmail.com">Gmail</a></li>
+	    <li><a href="http://twitter.com/ragadab" class="twitter">Twitter</a></li>
 	  </ul>
+    <ul id="twitter_update_list"></ul>
 	</div>
 
   <div class="content-item footer">
@@ -67,5 +68,8 @@
 	var pageTracker = _gat._getTracker("UA-10401500-1");
 	pageTracker._trackPageview();
 	} catch(err) {}</script>
+	<script type="text/javascript" src="http://twitter.com/javascripts/blogger.js"></script>
+	<script type="text/javascript" src="http://twitter.com/statuses/user_timeline/ragadab.json?callback=twitterCallback2&amp;count=6"></script>
+	
 </body>
 </html>
