@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div class="content-item blog">
-  <h2>{{ page.title }}</h2>
+  <h2>{{ page.title }}. <a class="link home" href="/">Back to articles list</a></h2>
   <h3>{{ page.subtitle }}</h3>
 	{{ content }}
 </div>
@@ -13,6 +13,7 @@ layout: default
   <ul class="posts">{% for post in site.related_posts limit:3 %}
       <li><a href="{{ post.url }}">{{ post.title }}</a> <small>{{ post.date | date_to_string }}</small>  </li>{% endfor %}
   </ul>
+<p><a class="link home" href="/">Back to articles list</a></p>
 </div>
 
 <div id="disqus" class="content-item">

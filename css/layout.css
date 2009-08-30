@@ -97,7 +97,7 @@ body .first { margin-left: 0; padding-left: 0; }
 body .last { margin-right: 0; padding-right: 0; }
 body .top { margin-top: 0; padding-top: 0; }
 body .bottom { margin-bottom: 0; padding-bottom: 0; }
-body .showgrid { background: url('/images/grid.png?1251590267'); }
+body .showgrid { background: url('/images/grid.png?1251593149'); }
 body .error { padding: .8em; margin-bottom: 1em; border: 2px solid #dddddd; background: #fbe3e4; color: #8a1f11; border-color: #fbc2c4; }
 body .error a { color: #8a1f11; }
 body .notice { padding: .8em; margin-bottom: 1em; border: 2px solid #dddddd; background: #fff6bf; color: #514721; border-color: #ffd324; }
@@ -134,14 +134,15 @@ body .content-area, body .header { display: inline; float: left; margin-right: 0
 
 body { font: Helvetica, Arial, sans-serif; background: #373737 url(/images/bg.png) repeat left top; color: #858585; font-size: 16px; line-height: 26px; }
 body .header { padding-bottom: 50px; padding-top: 20px; }
+body .header p, body .header h1 { padding: 0; margin: 0; }
+body .header h1 a, body .header h1 { border: none; margin: !blueprint_grid_margin 0; }
 body h2 { padding: 10px 0; }
+body h2 a.link.home { color: #595959; border-color: #595959; }
 body a, body a:visited { color: #00deff; text-decoration: none; border-bottom: 1px dotted #00deff; padding-bottom: 1px; }
-body h1, body h1 a, body h1 a:visited { color: #ebebeb; font-weight: bold; }
+body h1, body h1 a, body h1 a:visited { color: #ebebeb; font-weight: bold; z-index: 1000; }
 body h2, body h2 a:visited, body h2 a { color: #c9c9c9; }
 body h3 { color: #a7a7a7; }
 body a:hover { background-color: #484848; color: #00deff; }
-body .header p, body .header h1 { padding: 0; margin: 0; }
-body .header h1 a, body .header h1 { border: none; margin: !blueprint_grid_margin 0; }
 body .sidebar .contacts, body .sidebar ul.sidebar, body div.sidebar h2, body div.sidebar h3 { padding: 0 10px; }
 
 .page { background: url(/images/bg-header.png) repeat-x left top; }
@@ -191,7 +192,7 @@ ul.sidebar li a.gmail { background: url(/images/logo-gmail.png) no-repeat; width
 
 .content-item ul li { padding-left: 25px; background: url(/images/bullet-arrow.png) no-repeat left 50%; }
 
-#twitter_update_list li { padding: 0 0 10px 20px; background: url(/images/bullet-arrow.png) no-repeat 0.4em left; font-size: 12px; }
+#twitter_update_list li { padding: 20px 0 10px 0; background: url(/images/hr-sidebar.gif) no-repeat bottom center; font-size: 12px; }
 
 .chat ul, .chat ol { margin-bottom: 0; }
 
@@ -208,3 +209,5 @@ ul.sidebar li a.gmail { background: url(/images/logo-gmail.png) no-repeat; width
 .chat .rounded.rb { bottom: 0; right: 0; background-position: 9px 9px; }
 
 .thumb { float: left; background: url(/images/thumb.gif) no-repeat center center; padding: 10px; }
+
+body > .top-grad { position: fixed; top: 0; height: 100px; width: 100%; background: url(/images/top-grad.png) repeat-x top; }

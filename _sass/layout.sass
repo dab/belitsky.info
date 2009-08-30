@@ -49,8 +49,17 @@ body
   .header
     padding-bottom= !blueprint_grid_margin * 5
     padding-top= !blueprint_grid_margin * 2
+    p, h1 
+      padding: 0
+      margin: 0
+    h1 a, h1
+      border: none
+      margin: !blueprint_grid_margin 0
   h2
     padding= !blueprint_grid_margin 0
+    a.link.home
+      color= !bg_color + #222
+      border-color= !bg_color + #222
   a, a:visited
     color= !links_color
     text-decoration: none
@@ -59,6 +68,7 @@ body
   h1, h1 a, h1 a:visited
     color= !color + #666
     font-weight: bold
+    z-index: 1000
   h2, h2 a:visited, h2 a
     color= !color + #444
   h3
@@ -66,12 +76,6 @@ body
   a:hover
     background-color= !bg_color + #111
     color= !links_color
-  .header p, .header h1 
-    padding: 0
-    margin: 0
-  .header h1 a, .header h1
-    border: none
-    margin: !blueprint_grid_margin 0
   .sidebar .contacts, .sidebar ul.sidebar, div.sidebar h2, div.sidebar h3
     padding= 0 !blueprint_grid_margin
 .page
@@ -174,7 +178,7 @@ ul.sidebar
   padding-left: 25px
   background: url(/images/bullet-arrow.png) no-repeat left 50%
 #twitter_update_list li
-  padding: 10px 0 20px 0
+  padding: 20px 0 10px 0
   background: url(/images/hr-sidebar.gif) no-repeat bottom center 
   font-size: 12px
 .chat ul, .chat ol 
@@ -212,3 +216,10 @@ ul.sidebar
   float: left
   background: url(/images/thumb.gif) no-repeat center center
   padding: 10px
+
+body > .top-grad
+  position: fixed
+  top: 0
+  height: 100px
+  width: 100%
+  background: url(/images/top-grad.png) repeat-x top
