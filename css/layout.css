@@ -97,7 +97,7 @@ body .first { margin-left: 0; padding-left: 0; }
 body .last { margin-right: 0; padding-right: 0; }
 body .top { margin-top: 0; padding-top: 0; }
 body .bottom { margin-bottom: 0; padding-bottom: 0; }
-body .showgrid { background: url('/images/grid.png?1251593149'); }
+body .showgrid { background: url('/images/grid.png?1251629874'); }
 body .error { padding: .8em; margin-bottom: 1em; border: 2px solid #dddddd; background: #fbe3e4; color: #8a1f11; border-color: #fbc2c4; }
 body .error a { color: #8a1f11; }
 body .notice { padding: .8em; margin-bottom: 1em; border: 2px solid #dddddd; background: #fff6bf; color: #514721; border-color: #ffd324; }
@@ -150,6 +150,7 @@ body .sidebar .contacts, body .sidebar ul.sidebar, body div.sidebar h2, body div
 .content-item.blog { padding-bottom: 20px; background: url(/images/bg-h2.png) no-repeat top left; }
 .content-item.blog h2 { margin: 0 0 10px 0; }
 .content-item.blog p { padding: 0 10px; }
+.content-item.blog .chat p { padding: 0; }
 
 ul.sidebar { list-style: none; }
 ul.sidebar li a { display: block; border: none; margin-top: 20px; text-indent: -10000px; }
@@ -160,9 +161,9 @@ ul.sidebar li a.gmail { background: url(/images/logo-gmail.png) no-repeat; width
 
 .chat { margin-left: 10px; color: #cacaca; padding: 10px 0; background: #3b3b3b; position: relative; margin-bottom: 30px; }
 
-.chat .right { min-height: 53px; background: #3b3b3b url(/images/upic-me.jpg) no-repeat right top; padding: 10px 83px 10px 10px; border: 10px solid #3b3b3b; }
+.chat .right { min-height: 73px; background: #3b3b3b url(/images/upic-me.jpg) no-repeat right top; padding: 0px 83px 0px 10px; border: 10px solid #3b3b3b; }
 
-.chat .left { background-color: #4c4c4c; padding: 10px 10px 10px 83px; border: 10px solid #4c4c4c; }
+.chat .left { min-height: 73px; background-color: #4c4c4c; padding: 0px 10px 0px 83px; border: 10px solid #4c4c4c; }
 
 .chat.oleganza .left { background: #4c4c4c url(/images/upic-oleganza.jpg) no-repeat left top; }
 
@@ -210,7 +211,7 @@ ul.sidebar li a.gmail { background: url(/images/logo-gmail.png) no-repeat; width
 
 .thumb { float: left; background: url(/images/thumb.gif) no-repeat center center; padding: 10px; }
 
-body > .top-grad { position: fixed; top: 0; height: 100px; width: 100%; background: url(/images/top-grad.png) repeat-x top; }
+body > .top-grad { position: fixed; top: 0; height: 50px; width: 100%; background: url(/images/top-grad.png) repeat-x top; }
 
 body > .site-menu { position: fixed; top: 0; right: 0; font-size: 10px; list-style: none; }
 body > .site-menu li { float: left; }

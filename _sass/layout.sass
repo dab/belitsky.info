@@ -88,7 +88,9 @@ body
   h2
     margin: 0 0 10px 0
   p
-    padding= 0 !blueprint_grid_margin 
+    padding= 0 !blueprint_grid_margin
+  .chat p
+    padding: 0
 
 ul.sidebar
   list-style: none
@@ -124,14 +126,15 @@ ul.sidebar
 
 
 .chat .right 
-  min-height: 53px
+  min-height: 73px
   background: #3b3b3b url(/images/upic-me.jpg) no-repeat right top
-  padding: 10px 83px 10px 10px
+  padding: 0px 83px 0px 10px
   border: 10px solid #3b3b3b
 
 .chat .left  
+  min-height: 73px
   background-color: #4c4c4c
-  padding: 10px 10px 10px 83px
+  padding: 0px 10px 0px 83px
   border: 10px solid #4c4c4c
 
 .chat.oleganza .left 
@@ -221,7 +224,7 @@ ul.sidebar
 body > .top-grad
   position: fixed
   top: 0
-  height: 100px
+  height: 50px
   width: 100%
   background: url(/images/top-grad.png) repeat-x top
 
