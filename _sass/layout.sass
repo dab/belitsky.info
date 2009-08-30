@@ -25,6 +25,9 @@ body
     +container
   .footer
     +column(!blueprint_grid_columns)
+    padding-top: 50px
+    p
+      margin= 0 0 10px 0
   div.sidebar
     // One third of the grid columns, rounding down. With 24 cols, this is 8.
     !sidebar_columns = floor(!blueprint_grid_columns / 4)
@@ -38,6 +41,7 @@ body
 
 
 body
+  font: Helvetica, Arial, sans-serif
   background= !bg_color "url(/images/bg.png) repeat left top"
   color= !color
   font-size= !font_size
@@ -76,6 +80,8 @@ body
 .content-item.blog
   padding-bottom= !blueprint_grid_margin * 2
   background: url(/images/bg-h2.png) no-repeat top left
+  h2
+    margin: 0 0 10px 0
   p
     padding= 0 !blueprint_grid_margin 
 
