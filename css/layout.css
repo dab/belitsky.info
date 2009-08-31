@@ -157,15 +157,15 @@ body > .site-menu li { float: left; }
 .content-item.blog p { padding: 0 10px; }
 .content-item.blog .chat p { padding: 0; }
 
-ul.sidebar { list-style: none; }
+ul.sidebar { list-style: none; margin: 10px 15px; }
 ul.sidebar li a { display: block; border: none; margin-top: 20px; }
 ul.sidebar li a.github { background: url(/images/logo-github.png) no-repeat; width: 129px; height: 56px; text-indent: -10000px; }
 ul.sidebar li a.twitter { background: url(/images/logo-twitter.png) no-repeat; width: 128px; height: 30px; text-indent: -10000px; }
 ul.sidebar li a.flickr { background: url(/images/logo-flickr.png) no-repeat; width: 128px; height: 40px; text-indent: -10000px; }
 ul.sidebar li a.gmail { background: url(/images/logo-gmail.png) no-repeat; width: 128px; height: 57px; text-indent: -10000px; }
 
-div.sidebar #flickr_badge_uber_wrapper { padding: 10px; }
-div.sidebar #flickr_badge_uber_wrapper a { margin: 0 10px 10px 0; display: block; border: 0px; }
+div.sidebar #flickr_badge_uber_wrapper { padding: 10px 0; margin-left: 15px; }
+div.sidebar #flickr_badge_uber_wrapper a { margin: 0 5px 5px 0; display: block; border: 0px; }
 div.sidebar #flickr_badge_uber_wrapper a:hover { background: transparent; }
 div.sidebar .flickr_badge_image { float: left; }
 div.sidebar .flickr_badge_image img { padding: 10px; margin: 0; background: url(/images/thumb.gif) no-repeat center center; }
