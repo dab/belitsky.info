@@ -164,7 +164,7 @@ ul.sidebar li a.twitter { background: url(/images/logo-twitter.png) no-repeat; w
 ul.sidebar li a.flickr { background: url(/images/logo-flickr.png) no-repeat; width: 128px; height: 40px; text-indent: -10000px; }
 ul.sidebar li a.gmail { background: url(/images/logo-gmail.png) no-repeat; width: 128px; height: 57px; text-indent: -10000px; }
 
-div.sidebar #flickr_badge_uber_wrapper { padding: 10px 0; margin-left: 15px; }
+div.sidebar #flickr_badge_uber_wrapper { padding: 10px 0; margin-left: 25px; }
 div.sidebar #flickr_badge_uber_wrapper a { margin: 0 5px 5px 0; display: block; border: 0px; }
 div.sidebar #flickr_badge_uber_wrapper a:hover { background: transparent; }
 div.sidebar .flickr_badge_image { float: left; }
