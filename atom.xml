@@ -23,6 +23,7 @@ layout: nil
    <content type="html">
 		{% if post.teaser %}
  			<p>{{ post.teaser  }}</p>
+ 			<p><a href="{{post.url}}">Read whole post.</a></p>
 		{% else %}
 			{{ post.content  }}
 		{% endif %}</content>

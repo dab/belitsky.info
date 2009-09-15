@@ -209,6 +209,8 @@ div.sidebar .flickr_badge_image img { padding: 10px; margin: 0; background: url(
 
 .chat.jamis .left { background: #4c4c4c url(/images/upic-jamis.jpg) no-repeat left top; }
 
+.chat.giles .left { background: #4c4c4c url(/images/upic-giles.jpg) no-repeat left top; }
+
 .content-item ul, .content-item ol { margin: 0 0 20px 10px; list-style-position: inside; padding: 0; }
 
 .content-item ul, #twitter_update_list { list-style: none; }
