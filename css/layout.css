@@ -136,6 +136,7 @@ body { font: Helvetica, Arial, sans-serif; background: #373737 url(/images/bg.pn
 body .header { padding-bottom: 50px; padding-top: 30px; }
 body .header p, body .header h1 { padding: 0; margin: 0; }
 body .header h1 a, body .header h1 { border: none; margin: !blueprint_grid_margin 0; }
+body .footer { font-size: 0.8em; line-height: 1.2em; }
 body h2 { padding: 10px 0; }
 body h2 a.link.home { color: #595959; border-color: #595959; font-size: 0.6em; }
 body a, body a:visited { color: #00deff; text-decoration: none; border-bottom: 1px dotted #00deff; padding-bottom: 1px; }
