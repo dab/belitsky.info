@@ -1,0 +1,33 @@
+---
+layout: post
+title: Using Rack:Tidy middleware with RadiantCMS
+subtitle: Oprimising rendered html
+teaser: Thanks for Sean Cribbs for this cool tip
+thumb: thumb-rack-radiant.jpg
+category: work
+---
+
+<p>While working on RadiantCMS based site, i start searching for tool, which will let me optimize html output, rendered by CMS.</p>
+<p>Sean Cribbs give me good advice on IRC &mdash; Rack Middleware &mdash; <a href="http://coderack.org/users/webficient/entries/38-racktidy">Rack::Tidy</a>.</p>
+
+<h3>Installation</h3>
+<p>You can follow installation steps from <a href="http://coderack.org/users/webficient/entries/38-racktidy">coderack entry page</a>.
+</p>
+<h3>Adding to RadiantCMS installation</h3>
+<code>
+# above Rails::Initializer block
+require 'rack/tidy'
+
+# inside Rails::Initializer block
+config.middleware.use Rack::Tidy
+</code>
+
+<p>I used only two non-default option:</p>
+<code>
+config.middleware.use Rack::Tidy,
+  :ignore_paths => ['/admin'],
+  :indent => false
+</code>
+<h3>Problems</h3>
+<p>I get problem with running this setup on my ubuntu vps, i get segmentation fault from tidybuffer.</p>
+<p>Found simple patch on <a href="http://rubyforge.org/tracker/index.php?func=detail&aid=10007&group_id=435&atid=1744">rubyforge</a>.</p>
